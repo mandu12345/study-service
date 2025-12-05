@@ -1,0 +1,20 @@
+server:
+  port: 10000
+
+spring:
+  datasource:
+    url: jdbc:mariadb://studydb.choiiq8m684g.ap-northeast-2.rds.amazonaws.com:3306/studydb
+    username: studyuser
+    password: 12200000
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+
+jwt:
+  secret: this_is_a_very_long_random_secret_key_32_chars
