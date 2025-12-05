@@ -5,40 +5,29 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- ✅ Spring Boot parent -->
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.2</version>
-        <relativePath/>
+        <groupId>com.study</groupId>
+        <artifactId>study-monorepo</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>com.study</groupId>
     <artifactId>common-security</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>common-security</name>
-    <description>Common Security Module (JWT, Filters 등)</description>
-
-    <properties>
-        <java.version>17</java.version>
-    </properties>
-
     <dependencies>
-        <!-- Spring Security 기본 -->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
-        <!-- 서블릿/HttpServletRequest 등을 위해 web starter -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- JWT 라이브러리 -->
+        <!-- JWT -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt-api</artifactId>
@@ -56,6 +45,7 @@
             <version>0.11.5</version>
             <scope>runtime</scope>
         </dependency>
+
     </dependencies>
 
 </project>
