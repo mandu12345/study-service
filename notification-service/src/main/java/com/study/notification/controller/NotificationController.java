@@ -45,7 +45,7 @@ public class NotificationController {
         return service.findAllResponsesByUser(userId);
     }
 
-    // 🔹 GET /api/notifications/unread - 내 읽지 않은 알림 조회
+    // 🔹 GET /api/notifications/unread - 내 읽지 않은 알림 조회함.
     @GetMapping("/unread")
     public List<NotificationResponse> getUnread(HttpServletRequest request) {
         Long userId = getUserIdFromRequest(request);
