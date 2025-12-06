@@ -12,7 +12,7 @@
         <artifactId>study-monorepo</artifactId>
         <version>0.0.1-SNAPSHOT</version>  <!-- 4.0.0 ?? -->
         <!-- 부모 pom.xml 이 ../../pom.xml 위치에 있으니까 -->
-        <relativePath>/pom.xml</relativePath>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <!-- 이 모듈(서비스)의 이름 -->
