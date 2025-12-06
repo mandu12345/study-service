@@ -23,7 +23,7 @@
         <module>common-web</module>
         <module>auth-service</module>
         <module>notification-service</module>
-        <!-- 나중에 user-service 등도 추가 -->
+        <module>user-service</module>
     </modules>
 
     <properties>
